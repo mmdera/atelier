@@ -1,0 +1,19 @@
+{
+  "name": "atelier-personal-utility-ecosystem",
+  "private": true,
+  "version": "1.3.16",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "setup": "npm install"
+  },
+  "devDependencies": {
+    "vite": "^6.4.1"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "@supabase/supabase-js": "^2.57.0"
+  }
+}

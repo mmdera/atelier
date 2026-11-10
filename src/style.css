@@ -1325,3 +1325,82 @@ html,body,#app{min-height:100%;}
 .result-box strong{color:#fff!important}
 :root[data-theme="dark"] .result-box{background:linear-gradient(145deg,#223b31 0%,#172b23 100%)!important;color:#f5f7f1!important}
 :root[data-theme="dark"] .result-box strong{color:#fff!important}
+
+/* ATELIER v1.3.25 — landing, account navigation and visual consistency refinements */
+/* Saturated cards keep a deliberate high-contrast text pairing regardless of inherited theme rules. */
+.clay-site .clay-category-card.tile-pink,
+.clay-site .clay-category-card.tile-teal { color:#fff!important; }
+.clay-site .clay-category-card.tile-pink h3,
+.clay-site .clay-category-card.tile-pink p,
+.clay-site .clay-category-card.tile-pink .clay-card-top,
+.clay-site .clay-category-card.tile-pink .clay-card-bottom,
+.clay-site .clay-category-card.tile-teal h3,
+.clay-site .clay-category-card.tile-teal p,
+.clay-site .clay-category-card.tile-teal .clay-card-top,
+.clay-site .clay-category-card.tile-teal .clay-card-bottom { color:#fff!important; -webkit-text-fill-color:#fff; }
+.clay-site .clay-category-card.tile-pink p,
+.clay-site .clay-category-card.tile-teal p { opacity:.9!important; }
+.clay-site .clay-category-card.tile-pink .clay-card-art,
+.clay-site .clay-category-card.tile-teal .clay-card-art { color:#fff!important; }
+
+/* Replace the decorative landscape with a useful, editorial explanation of the product. */
+.clay-how-system{max-width:1600px;margin:0 auto;padding:112px clamp(28px,5vw,88px) 120px;background:#fffaf0;color:#0a0a0a}
+.clay-how-heading{display:grid;grid-template-columns:1.1fr .7fr;gap:56px;align-items:end;margin-bottom:48px}
+.clay-how-heading h2{font:500 clamp(48px,5.2vw,76px)/.99 Georgia,"Times New Roman",serif;letter-spacing:-.065em;margin:22px 0 0;color:#0a0a0a}
+.clay-how-heading h2 em{color:#1a3a3a}
+.clay-how-heading>p{max-width:440px;margin:0 0 6px;color:#59666a;font-size:15px;line-height:1.85}
+.clay-how-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:stretch}
+.clay-how-steps{display:grid;grid-template-rows:repeat(3,1fr);border-top:1px solid #ded8cb}
+.clay-how-steps article{display:grid;grid-template-columns:42px 1fr 44px;gap:16px;align-items:center;padding:25px 4px;border-bottom:1px solid #ded8cb;min-height:145px}
+.how-step-no{align-self:start;padding-top:5px;color:#a47b3d;font-size:11px;font-weight:800;letter-spacing:.12em}
+.clay-how-steps h3{font:500 24px/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.035em;margin:0 0 8px;color:#171b18}
+.clay-how-steps p{font-size:12px;line-height:1.7;color:#68747a;margin:0;max-width:360px}
+.how-step-mark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:20px;box-shadow:inset -7px -8px 12px #00000012,inset 5px 5px 10px #ffffff9c}
+.mark-pink{background:#ff9cba;color:#71304a}.mark-lavender{background:#b8a4ed;color:#392d5e}.mark-mint{background:#a4d4c5;color:#234f43}
+.clay-system-preview{position:relative;overflow:hidden;min-height:455px;border-radius:26px;background:#1a3a3a;color:#fffaf0;padding:30px 34px 24px;box-shadow:0 22px 55px #1a3a3a18}
+.clay-system-preview:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-110px;top:-150px;background:radial-gradient(circle at 35% 35%,#a4d4c5 0,#4b8b78 48%,#1a3a3a 72%);opacity:.48;pointer-events:none}
+.system-preview-head{display:flex;align-items:center;gap:10px;position:relative;z-index:1;font-size:10px;letter-spacing:.12em}
+.system-preview-head .mini{width:30px;height:30px;border-color:#d7e4da;color:#fffaf0}
+.system-preview-head small{margin-left:auto;color:#b8c9bd;font-size:9px;letter-spacing:.14em}
+.system-preview-title{font:500 clamp(28px,3vw,39px)/1.1 Georgia,"Times New Roman",serif;letter-spacing:-.045em;margin:35px 0 24px;position:relative;z-index:1}
+.system-preview-title span{display:block;font:400 12px/1.5 Inter,"DM Sans",sans-serif;letter-spacing:0;color:#bfd0c5;margin-top:8px}
+.system-preview-list{position:relative;z-index:1;border-top:1px solid #ffffff2c}
+.system-preview-list>div{display:flex;align-items:center;gap:13px;padding:15px 2px;border-bottom:1px solid #ffffff25}
+.system-dot{width:10px;height:10px;border-radius:50%;flex:none;box-shadow:0 0 0 5px #ffffff12}
+.dot-pink{background:#ff7da7}.dot-teal{background:#83c6b3}.dot-lavender{background:#c0a9f0}.dot-peach{background:#ffb084}
+.system-preview-list b,.system-preview-list small{display:block}.system-preview-list b{font-size:13px;color:#fffaf0}.system-preview-list small{font-size:10px;color:#c1d0c6;margin-top:3px}
+.system-preview-list em{margin-left:auto;color:#d7b66e;font-size:10px;font-style:normal;letter-spacing:.12em}
+.system-preview-foot{display:flex;justify-content:space-between;gap:12px;margin-top:21px;color:#b9c9bf;font-size:8px;font-weight:700;letter-spacing:.13em;position:relative;z-index:1}
+
+/* Primary CTA text must remain visible over its white surface. */
+.clay-site .clay-cta .clay-btn-white,
+.clay-site .clay-cta .clay-btn-white:link,
+.clay-site .clay-cta .clay-btn-white:visited{display:inline-flex!important;align-items:center;justify-content:center;gap:10px;background:#fff!important;color:#17211d!important;-webkit-text-fill-color:#17211d!important;font-size:14px!important;font-weight:700!important;line-height:1.2!important;min-height:54px;padding:0 25px!important;opacity:1!important;text-decoration:none!important}
+.clay-site .clay-cta .clay-btn-white span{color:#17211d!important;-webkit-text-fill-color:#17211d!important;display:inline!important;opacity:1!important}
+.clay-site .clay-cta .clay-btn-white:hover{background:#f5f0e5!important;color:#17211d!important;transform:translateY(-2px)}
+
+/* Header profile control replaces the non-functional icon and sidebar identity block. */
+.profile-button{min-height:42px;padding:0 17px;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:600 12px "DM Sans",sans-serif;text-decoration:none;white-space:nowrap;transition:background .2s,border-color .2s,transform .2s}
+.profile-button-icon{width:23px;height:23px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--forest);font-size:14px}
+.profile-button:hover{border-color:var(--brass);background:var(--soft);transform:translateY(-1px)}
+:root[data-theme="dark"] .profile-button{background:#202c24;border-color:#3c4a40;color:#f7f2e8}
+:root[data-theme="dark"] .profile-button-icon{background:#34483b;color:#e9d6a7}
+.user-chip{display:none!important}
+
+/* Keep the sign-in surface in the same warm editorial family as the public site. */
+.auth-visual{background:linear-gradient(145deg,#f7c3a4 0%,#f4a783 56%,#e78d7b 100%)!important;color:#1a2924!important}
+.auth-visual:before{background:radial-gradient(circle at 68% 36%,rgba(255,238,183,.95) 0 13%,transparent 13.2%),radial-gradient(ellipse at 15% 95%,rgba(164,212,197,.9) 0 25%,transparent 25.3%),linear-gradient(145deg,rgba(255,255,255,.12),transparent 65%)!important}
+.auth-visual .brand,.auth-visual .brandmark{color:#1a3a3a!important}
+.auth-visual .brandmark{border-color:#1a3a3a!important}
+.auth-edition,.auth-visual-foot{color:#5c5146!important}
+.auth-kicker{color:#704c37!important}.auth-kicker span{background:#e8b94a!important}
+.auth-visual-copy h1.auth-hero-title{color:#17211d!important}
+.auth-visual-copy h1.auth-hero-title em{color:#1a3a3a!important}
+.auth-visual-copy p{color:#514f48!important}
+.auth-sculpture{opacity:.95!important}
+.auth-sculpture .sculpture-ring{border-color:rgba(26,58,58,.28)!important}
+.auth-sculpture .sculpture-spark{background:#fff5d7!important;box-shadow:0 0 14px 3px rgba(255,245,215,.55)!important}
+
+@media(max-width:1050px){.clay-how-heading{grid-template-columns:1fr;gap:18px}.clay-how-layout{grid-template-columns:1fr}.clay-system-preview{min-height:420px}}
+@media(max-width:720px){.clay-how-system{padding:76px 22px 82px}.clay-how-heading{margin-bottom:30px}.clay-how-heading h2{font-size:clamp(43px,11vw,58px)}.clay-how-heading>p{font-size:13px}.clay-how-steps article{min-height:125px;grid-template-columns:30px 1fr 38px;gap:11px}.clay-how-steps h3{font-size:20px}.clay-system-preview{padding:24px 20px 20px;min-height:390px;border-radius:20px}.system-preview-title{margin:27px 0 18px}.system-preview-foot{font-size:7px}.profile-button{min-height:38px;padding:0 12px;font-size:11px}.profile-button-icon{width:20px;height:20px}.auth-visual{min-height:420px!important}}
+@media(max-width:420px){.profile-button{gap:5px;padding:0 9px}.profile-button-icon{display:none}.system-preview-head small{font-size:7px}.system-preview-list small{font-size:9px}}

@@ -637,3 +637,12 @@ The same ATELIER design language applies throughout the signed-in application, i
 - Statistic values, panel headings, tool titles, descriptions, labels, table cells, inputs, placeholders, and action controls must remain legible in both themes.
 - Calculation result panels intentionally retain a deep-teal surface with white foreground in both themes.
 - New components must consume the shared tokens rather than introducing isolated hard-coded foreground/background pairs.
+
+
+## v1.3.25 interface refinements
+
+- The public landing page replaces the decorative landscape split-panel with a product-led “How Atelier works” section: three concise workflow principles paired with a workspace preview.
+- Saturated pink and deep-teal category cards explicitly use white foreground text for readable contrast.
+- The closing CTA uses an explicit dark foreground on its white button surface to prevent inherited colour rules from hiding the label.
+- Auth pages use the same cream, peach, mint and deep-teal palette, serif display typography, rounded controls and restrained surfaces as the public site.
+- The authenticated header contains a labeled Profile pill that navigates to Settings. The duplicate identity/profile chip has been removed from the sidebar.
